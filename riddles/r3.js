@@ -4,3 +4,10 @@
 // - name (string)
 // - taskDescription (string, the riddle text shown to the player)
 // - correctAnswer (string)
+
+export default {
+    id: 3,
+    name: "Multiplication Challenge",
+    taskDescription:"What is 12 multiplied by 3",
+    correctAnswer:"36"
+};
