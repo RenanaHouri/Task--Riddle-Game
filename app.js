@@ -38,6 +38,10 @@ async function playGame() {
 const filterRiddle=(await getAllRiddles()).filter(function(riddle){
         return riddle.difficulty===level.trim().toLowerCase()
 })
+if (filterRiddle.length === 0) {
+    console.log("No riddles found for this difficulty.");
+    return;
+}
 
 filterRiddle.forEach(function(riddle) {
     const start = Date.now();
@@ -95,6 +99,7 @@ What do you want to do?
 0. Exit
 `);
 choice=prompt("Enter your choice: ")
+try{
 if(choice=="1")
 {
     await playGame()
@@ -148,20 +153,26 @@ if(choice=="5")
      console.log("Riddle deleted successfully!");
 
 }
-if(choice=="6")
-{
-   let allPlayers= await getAllPlayers();
-   const playerFilter =allPlayers.filter(function(player)
-{
-    return player.lowestTime!=null
-})
-playerFilter.sort((a,b) => a.lowestTime - b.lowestTime);
-console.log("Leaderboard:");
-playerFilter.forEach(function(player,index)
-{
-    console.log(`${index + 1}. ${player.name} - ${player.lowestTime} seconds`);
-})
+if (choice == "6") {
+    let allPlayers = await getAllPlayers();
+
+    const playerFilter = allPlayers.filter(function(player) {
+        return player.lowestTime != null;
+    });
+
+    playerFilter.sort((a, b) => a.lowestTime - b.lowestTime);
+
+    console.log("Leaderboard:");
+
+    playerFilter.forEach(function(player, index) {
+        console.log(`${index + 1}. ${player.name} - ${player.lowestTime} seconds`);
+    });
+}
+
+} catch (error) {
+    console.log("Error:", error.message);
+}
+
 }
 
 
-}

@@ -47,6 +47,16 @@
       "name": "TestPlayer",
       "lowestTime": 6.525,
       "id": 1
+    },
+    {
+      "name": "",
+      "lowestTime": null,
+      "id": 2
+    },
+    {
+      "name": "D",
+      "lowestTime": null,
+      "id": 3
     }
   ]
 }
