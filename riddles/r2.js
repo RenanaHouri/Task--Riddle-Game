@@ -9,5 +9,7 @@ export default {
     id: 2,
     name: "King of the Jungle",
     taskDescription:"What animal is known as the king of the jungle",
-    correctAnswer:"Lion"
+    correctAnswer:"Lion",
+    choices: ["Tiger", "Lion", "Elephant", "Bear"],
+    difficulty: "medium"
 };

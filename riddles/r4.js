@@ -9,5 +9,6 @@ export default {
     id: 4,
     name: "Think Outside the Box",
     taskDescription:"What has hands but cannot clap",
-    correctAnswer:"Clock"
+    correctAnswer:"Clock",
+    difficulty: "hard"
 };

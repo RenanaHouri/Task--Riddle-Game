@@ -1,0 +1,52 @@
+{
+  "riddles": [
+    {
+      "id": 1,
+      "name": "Easy Math",
+      "taskDescription": "What is 8 + 8?",
+      "correctAnswer": "16",
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "name": "King of the Jungle",
+      "taskDescription": "What animal is known as the king of the jungle",
+      "correctAnswer": "Lion",
+      "choices": [
+        "Tiger",
+        "Lion",
+        "Elephant",
+        "Bear"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 3,
+      "name": "Multiplication Challenge",
+      "taskDescription": "What is 12 multiplied by 3",
+      "correctAnswer": "36",
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "name": "Think Outside the Box",
+      "taskDescription": "What has hands but cannot clap",
+      "correctAnswer": "Clock",
+      "difficulty": "hard"
+    },
+    {
+      "id": 5,
+      "name": "Days of the Week",
+      "taskDescription": "How many days are there in a week",
+      "correctAnswer": "7",
+      "difficulty": "easy"
+    }
+  ],
+  "players": [
+    {
+      "name": "TestPlayer",
+      "lowestTime": 6.525,
+      "id": 1
+    }
+  ]
+}

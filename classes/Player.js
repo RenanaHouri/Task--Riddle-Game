@@ -22,6 +22,15 @@ export default class Player{
         this.times.push(duration)
 
     }
+    getTotalTime(){
+        let totalTime = 0;
+        this.times.forEach(function(time)
+        {
+        totalTime+=time;
+        })
+        return totalTime/1000;
+
+    }
     showStats()
     {
         let totalTime=0;
